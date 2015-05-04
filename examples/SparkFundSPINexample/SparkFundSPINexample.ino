@@ -67,7 +67,7 @@ L6470.h - Register and pin definitions and descriptions for use
 *****************************************************************/
 
 #include <SPI.h>    // include the SPI library:
-#include "L6470.h"  // include the register and bit definitions
+#include "SparkFunL6470.h"  // include the register and bit definitions
 
 #define SLAVE_SELECT_PIN 10  // Wire this to the CSN pin
 #define MOSI             11  // Wire this to the SDI pin

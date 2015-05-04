@@ -1,4 +1,4 @@
-#include "AutoDriver.h"
+#include "SparkFunAutoDriver.h"
 
 //commands.ino - Contains high-level command implementations- movement
 //   and configuration commands, for example.

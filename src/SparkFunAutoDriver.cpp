@@ -1,5 +1,5 @@
 #include <SPI.h>
-#include "AutoDriver.h"
+#include "SparkFunAutoDriver.h"
 #include "util/delay.h" // Turns out, using the Arduino "delay" function
                         //  in a library constructor causes the program to
                         //  hang if the constructor is invoked outside of

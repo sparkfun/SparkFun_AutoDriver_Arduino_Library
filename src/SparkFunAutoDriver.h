@@ -2,7 +2,7 @@
 #define AutoDriver_h
 
 #include "Arduino.h"
-#include "dSPINConstants.h"
+#include "SparkFundSPINConstants.h"
 
 class AutoDriver
 {
@@ -235,3 +235,4 @@ class AutoDriver
 #define EXT_24MHZ_OSCOUT_INVERT 0x000E // External 24MHz crystal, output inverted
 #define EXT_32MHZ_OSCOUT_INVERT 0x000F // External 32MHz crystal, output inverted 
 #endif
+

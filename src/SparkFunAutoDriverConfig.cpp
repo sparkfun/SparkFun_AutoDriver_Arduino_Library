@@ -1,4 +1,4 @@
-#include "AutoDriver.h"
+#include "SparkFunAutoDriver.h"
 
 // Setup the SYNC/BUSY pin to be either SYNC or BUSY, and to a desired
 //  ticks per step level.

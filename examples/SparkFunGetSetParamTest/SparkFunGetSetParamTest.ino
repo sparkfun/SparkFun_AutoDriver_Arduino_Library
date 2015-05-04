@@ -1,4 +1,5 @@
-#include <AutoDriver.h>
+#include <SparkFunAutoDriver.h>
+#include <SPI.h>
 
 /* Test sketch that just gets and sets values on a L6470 AutoDriver
  *

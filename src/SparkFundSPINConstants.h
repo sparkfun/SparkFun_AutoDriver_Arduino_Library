@@ -1,3 +1,6 @@
+#ifndef _dspin_constants_h_
+#define _dspin_constants_h_
+
 // Constant definitions provided by ST
 
 // constant definitions for overcurrent thresholds. Write these values to 
@@ -203,3 +206,6 @@
 #define SOFT_HIZ             0xA0
 #define HARD_HIZ             0xA8
 #define GET_STATUS           0xD0
+
+#endif
+
