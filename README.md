@@ -19,6 +19,11 @@ Documentation
 * **[Product Repository](https://github.com/sparkfun/L6470-AutoDriver)** - Main repository (including hardware files) for the AutoDriver board.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/getting-started-with-the-autodriver)** - Basic hookup guide for the AutoDriver board.
 
+Version History
+-------------------
+
+* [v 1.0.0](https://github.com/sparkfun/SparkFun_AutoDriver_Arduino_Library/tree/V_1.0.0) - Initial release
+
 License Information
 -------------------
 This product is open source! 
