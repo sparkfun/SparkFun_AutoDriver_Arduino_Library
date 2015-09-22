@@ -138,7 +138,7 @@ class AutoDriver
 //    goUntil()
 //    releaseSw()
 #define RESET_ABSPOS  0x00
-#define COPY_ABSPOS   0x01
+#define COPY_ABSPOS   0x08
 
 // configSyncPin() options: the !BUSY/SYNC pin can be configured to be low when
 //  the chip is executing a command, *or* to output a pulse on each full step
