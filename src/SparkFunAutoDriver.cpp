@@ -36,6 +36,8 @@ void AutoDriver::SPIConfig()
   
   SPISettings settings(5000000, MSBFIRST, SPI_MODE3); 
  
+  hardHiZ(); //put the bridges in Hi-Z state before the reset.
+  _delay_ms(5);
   
   digitalWrite(_resetPin, LOW);
   _delay_ms(5);
