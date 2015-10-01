@@ -27,9 +27,6 @@ AutoDriver::AutoDriver(int CSPin, int resetPin)
 
 void AutoDriver::SPIConfig()
 {
-	pinMode(MOSI, OUTPUT);
-	pinMode(MISO, INPUT);
-	pinMode(SCK, OUTPUT);
   pinMode(_CSPin, OUTPUT);
   digitalWrite(_CSPin, HIGH);
   pinMode(_resetPin, OUTPUT);
