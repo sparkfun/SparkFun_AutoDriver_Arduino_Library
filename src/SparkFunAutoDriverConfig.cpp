@@ -215,15 +215,15 @@ void AutoDriver::setSwitchMode(int switchMode)
 {
   unsigned long configVal = getParam(CONFIG);
   // This bit is CONFIG 4, mask is 0x0010
-  configVal &= ~(0x0100);
+  configVal &= ~(0x010);
   //Now, OR in the masked incoming value.
-  configVal |= (0x0100&switchMode);
+  configVal |= (0x010&switchMode);
   setParam(CONFIG, configVal);
 }
 
 int AutoDriver::getSwitchMode()
 {
-  return (int) (getParam(CONFIG) & 0x0100);
+  return (int) (getParam(CONFIG) & 0x010);
 }
 
 // There are a number of clock options for this chip- it can be configured to

@@ -24,7 +24,7 @@ void pv(float v) {
 
 void test(float v1, float v2) {
   if (v1 != v2) {
-    Serial.println("!!! " + name + " failed");
+    Serial.println("! ! ! " + name + " failed");
     Serial.println(v1, DEC);
     Serial.println(v2, DEC);
     pass = false;
@@ -33,7 +33,7 @@ void test(float v1, float v2) {
 
 void test(int v1, int v2) {
   if (v1 != v2) {
-    Serial.println("!!! " + name + " failed");
+    Serial.println("! ! ! " + name + " failed");
     Serial.println(v1, DEC);
     Serial.println(v2, DEC);
     pass = false;
