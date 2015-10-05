@@ -33,8 +33,6 @@ void AutoDriver::SPIConfig()
   if (_busyPin != -1) pinMode(_busyPin, INPUT_PULLUP);
  
   SPI.begin();
-  
-  SPISettings settings(5000000, MSBFIRST, SPI_MODE3); 
  
   hardHiZ(); //put the bridges in Hi-Z state before the reset.
   _delay_ms(5);
