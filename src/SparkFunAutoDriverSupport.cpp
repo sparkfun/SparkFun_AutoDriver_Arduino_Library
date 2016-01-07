@@ -296,7 +296,7 @@ unsigned long AutoDriver::xferParam(unsigned long value, byte bitLen)
   // Let's make sure our value has no spurious bits set, and if the value was too
   //  high, max it out.
   unsigned long mask = 0xffffffff >> (32-bitLen);
-  if (value > mask) value = mask;
+  value &= mask; 
   
   byte* bytePointer = (byte*)&value;
   for (signed char i = byteLen-1; i >= 0; i--)
