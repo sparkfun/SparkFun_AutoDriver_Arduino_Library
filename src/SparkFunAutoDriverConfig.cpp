@@ -307,3 +307,4 @@ boolean AutoDriver::getLoSpdOpt()
 {
   return (boolean) ((getParam(MIN_SPEED) & 0x00001000) != 0);
 }
+

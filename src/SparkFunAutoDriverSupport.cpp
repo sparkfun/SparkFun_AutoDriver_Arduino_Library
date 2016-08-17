@@ -59,14 +59,14 @@ float AutoDriver::maxSpdParse(unsigned long stepsPerSec)
 // This is a 12-bit value, so we need to make sure the value is at or below 0xFFF.
 unsigned long AutoDriver::minSpdCalc(float stepsPerSec)
 {
-  float temp = stepsPerSec * 4.1943;
+  float temp = stepsPerSec / 0.238;
   if( (unsigned long) long(temp) > 0x00000FFF) return 0x00000FFF;
   else return (unsigned long) long(temp);
 }
 
 float AutoDriver::minSpdParse(unsigned long stepsPerSec)
 {
-    return (float) (stepsPerSec & 0x00000FFF) / 4.1943;
+    return (float) ((stepsPerSec & 0x00000FFF) * 0.238);
 }
 
 // The value in the FS_SPD register is ([(steps/s)*(tick)]/(2^-18))-0.5 where tick is 
@@ -300,9 +300,8 @@ unsigned long AutoDriver::xferParam(unsigned long value, byte bitLen)
 
   for (int i = 0; i < byteLen; i++)
   {
-    temp = SPIXfer((byte)value);
-    retVal = retVal << 8;
-    retVal |= temp ;
+    temp = SPIXfer((byte)(value>>((byteLen-i-1)*8)));
+    retVal |= (temp<<((byteLen-i-1)*8)) ;
   }
 
   unsigned long mask = 0xffffffff >> (32-bitLen);
