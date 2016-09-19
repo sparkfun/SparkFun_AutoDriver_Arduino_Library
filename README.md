@@ -17,7 +17,7 @@ Documentation
 -------------------
 * **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 * **[Product Repository](https://github.com/sparkfun/L6470-AutoDriver)** - Main repository (including hardware files) for the AutoDriver board.
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/getting-started-with-the-autodriver)** - Basic hookup guide for the AutoDriver board.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/getting-started-with-the-autodriver---v13)** - Basic hookup guide for the AutoDriver board.
 
 Version History
 -------------------
