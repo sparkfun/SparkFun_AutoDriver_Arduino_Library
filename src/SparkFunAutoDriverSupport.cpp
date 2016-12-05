@@ -303,6 +303,7 @@ long AutoDriver::xferParam(unsigned long value, byte bitLen)
     retVal = retVal << 8;
     temp = SPIXfer((byte)(value>>((byteLen-i-1)*8)));
     retVal |= temp;
+    Serial.println(temp, HEX);
   }
 
   unsigned long mask = 0xffffffff >> (32-bitLen);
